@@ -1,0 +1,76 @@
+body {
+    background-color: black;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+header nav {
+    border-bottom: 1px solid white;
+    margin: 0.5rem, 1.5rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    padding: 0.5rem;
+    display: block;
+}
+
+header nav ul {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+header nav ul li {
+    border-right: 1px solid white;
+    padding: 0.5rem 1rem;
+    min-width: fit-content;
+    font-weight: 100;
+    font-size: 1rem;
+    list-style: none;
+}
+
+header nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+header nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    background: #f142d7;
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+hgroup {
+    color: white;
+    text-align: right;
+    margin-top: 1rem;
+    padding-right: 1rem;
+    border-right: 2rem solid #00c8d7;
+}
+
+hgroup h1 {
+    font-family: "IBM Plex Sans";
+    font-size: 3rem;
+}
+
+hgroup p {
+    margin: 0;
+    font-weight: bold;
+}
