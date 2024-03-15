@@ -12,6 +12,10 @@ header nav {
     display: block;
 }
 
+footer nav {
+    vertical-align: bottom;
+}
+
 header nav ul {
     color: white;
     display: flex;
@@ -20,6 +24,15 @@ header nav ul {
     justify-content: space-evenly;
     gap: 2rem;
     padding: 1rem 0;
+}
+
+footer nav ul {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 5rem;
+    justify-content: space-evenly;
 }
 
 header nav ul li {
@@ -31,7 +44,15 @@ header nav ul li {
     list-style: none;
 }
 
-header nav ul li a {
+footer nav ul li {
+    padding: 0.5rem 1rem;
+    min-width: fit-content;
+    font-weight: 100;
+    font-size: 1rem;
+    list-style: none;
+}
+
+header nav ul li a, footer nav ul li a {
     display: flex;
     align-items: center;
     gap: 0.8rem;
@@ -57,17 +78,27 @@ header nav ul li a:hover::after {
     transition: 0.3s ease-in-out;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+    border-top: 1px solid white;
+}
+
 hgroup {
     color: white;
     text-align: right;
-    margin-top: 1rem;
-    padding-right: 1rem;
-    border-right: 2rem solid #00c8d7;
+    margin-top: 2rem;
+    padding-right: 2rem;
+    border-right: 3rem solid #00c8d7;
 }
 
 hgroup h1 {
     font-family: "IBM Plex Sans";
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 hgroup p {
