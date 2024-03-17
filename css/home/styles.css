@@ -5,7 +5,7 @@ html, body {
 body {
     display: block;
     background-color: black;
-    background-image: url("/images/shaan_black_background_closer_to_center.png");
+    background-image: url("/images/shaan_black_background.png");
     background-size: cover;                      
     background-repeat: no-repeat;
     background-position: center center;
