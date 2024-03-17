@@ -5,10 +5,6 @@ html, body {
 body {
     display: block;
     background-color: black;
-    background-image: url("/images/shaan_black_background_closer_to_center.png");
-    background-size: cover;                      
-    background-repeat: no-repeat;
-    background-position: center center;
     font-family: "IBM Plex Sans", sans-serif;
 }
 
@@ -16,27 +12,24 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
-        "header header header"
-        "latest_blogs latest_blogs home"
-        "latest_blogs latest_blogs ."
-        "latest_blogs latest_blogs ."
-        "latest_blogs latest_blogs ."
-        "latest_blogs latest_blogs ."
-        "latest_blogs latest_blogs ."
-        "latest_blogs latest_blogs ."
-        "latest_blogs latest_blogs ."
-        "latest_blogs latest_blogs ."
-        "latest_blogs latest_blogs ."
+        "header header home"
+        "header header home"
+        "header header home"
+        "header header home"
+        "latest_blogs latest_blogs latest_blogs"
+        "latest_blogs latest_blogs latest_blogs"
+        "latest_blogs latest_blogs latest_blogs"
+        "latest_blogs latest_blogs latest_blogs"
         "footer footer footer";
     gap: 1.5rem;
 }
 
 #header {
     grid-area: header;
+    border-right: 1px solid white;
 }
 
 #header nav {
-    border-bottom: 1px solid white;
     padding: 0.5rem;
     display: block;
 }
@@ -47,8 +40,10 @@ body {
 
 #header nav ul {
     color: white;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
     justify-content: space-evenly;
     gap: 2rem;
     padding: 1rem 0;
@@ -56,6 +51,9 @@ body {
 
 #home {
     grid-area: home;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     color: white;
     text-align: right;
     padding-right: 2rem;
@@ -177,7 +175,6 @@ body {
 }
 
 #header nav ul li {
-    border-right: 1px solid white;
     padding: 0.5rem 1rem;
     min-width: fit-content;
     font-weight: 100;
