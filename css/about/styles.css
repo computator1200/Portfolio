@@ -17,7 +17,7 @@ body {
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
         "header header header"
-        "about_me about_me home"
+        "about_me about_me about"
         "about_me about_me ."
         "about_me about_me ."
         "about_me about_me ."
@@ -55,19 +55,19 @@ body {
     padding: 1rem 0;
 }
 
-#home {
-    grid-area: home;
+#about {
+    grid-area: about;
     color: white;
     text-align: right;
     padding-right: 2rem;
 }
 
-#home h1 {
+#about h1 {
     font-family: "IBM Plex Sans";
     font-size: 6rem;
 }
 
-#home p {
+#about p {
     margin: 0;
     font-size: 3rem;
     font-weight: lighter;
@@ -180,6 +180,10 @@ body {
     text-decoration: none;
     color: white;
     position: relative;
+}
+
+#header nav ul li a svg {
+    min-width: 1rem;
 }
 
 #header nav ul li a::after {

@@ -1,0 +1,328 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    display: block;
+    background-color: black;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header skills_and_achievement"
+        "header header skills_and_achievements"
+        "header header skills_and_achievements"
+        "header header skills_and_achievements"
+        "my_skills my_skills my_skills"
+        "my_skills my_skills my_skills"
+        "my_skills my_skills my_skills"
+        "my_skills my_skills my_skills"
+        "my_achievements my_achievements my_achievements"
+        "my_achievements my_achievements my_achievements"
+        "my_achievements my_achievements my_achievements"
+        "footer footer footer";
+    gap: 2rem;
+}
+
+#header {
+    grid-area: header;
+    border-right: 1px solid white;
+}
+
+#header nav {
+    padding: 0.5rem;
+    display: block;
+}
+
+#footer nav {
+    vertical-align: bottom;
+}
+
+#header nav ul {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+#skills_and_achievements {
+    grid-area: skills_and_achievements;
+    color: white;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+#skills_and_achievements h1 {
+    color: white;
+    font-family: "IBM Plex Sans";
+    font-size: 5rem;
+}
+
+#skills_and_achievements p {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: lighter;
+    text-align: right;
+    text-justify: right;
+}
+
+#my_skills {
+    grid-area: my_skills;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+    max-height: fit-content;
+    min-width: fit-content;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+#my_skills p {
+    font-size: 1.5rem;
+}
+
+.skill-container {
+    min-width: fit-content;
+    background: black;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+.skill {
+    text-align: right;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+.logical_reasoning {
+    width: 90%;
+    background-color: #FF4E50;
+    background-image: linear-gradient(225deg, #FF4E50 0%, #F9D423 100%);
+}
+
+.critical_thinking {
+    width: 85%;
+    background-color: #FF416C;
+    background-image: linear-gradient(225deg, #FF416C 0%, #FF4B2B 100%);
+}
+
+.problem_solving {
+    width: 95%;
+    background-color: #4CB8C4;
+    background-image: linear-gradient(225deg, #4CB8C4 0%, #3CD3AD 100%);
+}
+
+.programming {
+    width: 95%;
+    background-color: #4158D0;
+background-image: linear-gradient(223deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+
+.mathematics {
+    width: 90%;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);       
+}
+
+.software_and_hardware {
+    width: 80%;
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    
+}
+
+.teamwork {
+    width: 90%;
+    background-color: #FF512F;
+    background-image: linear-gradient(225deg, #FF512F 0%, #DD2476 100%);
+}
+
+.communication {
+    width: 85%;
+    background-color: #00FF00;
+    background-image: linear-gradient(225deg, #00FF00 0%, #24f1f8 100%);
+}
+
+.leadership {
+    width: 80%;
+    background-color: #FF512F;
+    background-image: linear-gradient(225deg, #FF512F 0%, #DD2476 100%);
+}
+
+.time_management {
+    width: 85%;
+    background-color: #DA22FF;
+    background-image: linear-gradient(225deg, #092580 0%, #9733EE 100%);
+}
+
+#my_achievements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-area: my_achievements;
+    height: fit-content;
+    min-width: fit-content;
+    color: white;
+    margin: 1rem;
+    margin-right: 0;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+.achievement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 1rem;
+}
+
+
+.title_and_text h2 {
+    font-size: 3rem;;
+    padding-bottom: 1rem;
+}
+
+.title_and_text p {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.achievement figure img {
+    max-width: 23rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+/* #quick_links {
+    grid-area: quick_links;
+    color: white;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+#links_icon {
+    height: 2rem;
+    width: 2rem;
+    padding: 1rem;
+}
+
+#quick_links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+#quick_links ul li {
+    list-style: none;
+    color: white;
+    padding: 1rem;
+}
+
+#quick_links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#quick_links ul li a svg {
+    height: 2rem;
+    width: 2rem;
+    transition: 0.3s ease-in;
+}
+
+#quick_links ul li a svg:hover {
+    transform: scale(1.5);
+} */
+
+#footer {
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-weight: 100;
+    padding: 1rem;
+    color: white;
+    border-top: 1px solid white;
+}
+
+#footer nav ul {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+#header nav ul li {
+    padding: 0.5rem 1rem;
+    min-width: fit-content;
+    font-weight: 100;
+    font-size: 1rem;
+    list-style: none;
+}
+
+#footer nav ul li {
+    padding: 0.5rem 1rem;
+    min-width: fit-content;
+    font-weight: 100;
+    font-size: 1rem;
+    list-style: none;
+}
+
+#header nav ul li a, footer nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+#header nav ul li a svg {
+    min-width: 1rem;
+}
+
+#header nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    background: #f142d7;
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    transition: 0.3s ease-in-out;
+}
+
+#header nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}

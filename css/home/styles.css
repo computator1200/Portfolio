@@ -83,7 +83,7 @@ body {
 }
 
 #latest_blogs h2 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     padding: 1rem;
 }
 
@@ -103,6 +103,7 @@ body {
 }
 
 #latest_blogs ol li {
+    font-size: 2rem;
     list-style: none;
     color: white;
     padding: 1rem;
@@ -202,6 +203,10 @@ body {
     text-decoration: none;
     color: white;
     position: relative;
+}
+
+#header nav ul li a svg {
+    min-width: 1rem;
 }
 
 #header nav ul li a::after {

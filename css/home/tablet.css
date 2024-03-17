@@ -82,7 +82,7 @@ body {
 }
 
 #latest_blogs h2 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     padding: 1rem;
 }
 
@@ -102,6 +102,7 @@ body {
 }
 
 #latest_blogs ol li {
+    font-size: 2rem;
     list-style: none;
     color: white;
     padding: 1rem;
@@ -176,8 +177,16 @@ body {
     justify-content: space-evenly;
 }
 
-#header nav ul li {
+#home_link, #about_link, #skills_link, #experience_link, #projects_link, #contact_link{
     border-right: 1px solid white;
+    padding: 0.5rem 1rem;
+    min-width: fit-content;
+    font-weight: 100;
+    font-size: 1rem;
+    list-style: none;
+}
+
+#education_link, #blog_link {
     padding: 0.5rem 1rem;
     min-width: fit-content;
     font-weight: 100;
@@ -201,6 +210,10 @@ body {
     text-decoration: none;
     color: white;
     position: relative;
+}
+
+#header nav ul li a svg {
+    min-width: 1rem;
 }
 
 #header nav ul li a::after {
