@@ -1,0 +1,221 @@
+html, body {
+    min-height: 100%;
+}
+
+body {
+    display: block;
+    background-color: black;
+    background-image: url("/images/shaan_black_background_closer_to_center.png");
+    background-size: cover;                      
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header header header"
+        "latest_blogs latest_blogs home"
+        "latest_blogs latest_blogs ."
+        "latest_blogs latest_blogs ."
+        "latest_blogs latest_blogs ."
+        "latest_blogs latest_blogs ."
+        "latest_blogs latest_blogs ."
+        "latest_blogs latest_blogs ."
+        "latest_blogs latest_blogs ."
+        "latest_blogs latest_blogs ."
+        "latest_blogs latest_blogs ."
+        "footer footer footer";
+    gap: 1.5rem;
+}
+
+#header {
+    grid-area: header;
+}
+
+#header nav {
+    border-bottom: 1px solid white;
+    padding: 0.5rem;
+    display: block;
+}
+
+#footer nav {
+    vertical-align: bottom;
+}
+
+#header nav ul {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+#home {
+    grid-area: home;
+    color: white;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+#home h1 {
+    font-family: "IBM Plex Sans";
+    font-size: 6rem;
+}
+
+#home p {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: right;
+    text-justify: right;
+}
+
+#latest_blogs {
+    grid-area: latest_blogs;
+    color: white;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+#latest_blogs h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+#latest_blogs ol {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 1rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    max-height: 50rem;
+    max-width: 35rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+#latest_blogs ol li {
+    list-style: none;
+    color: white;
+    padding: 1rem;
+    flex-grow: 4;
+    min-height: 6rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+/* #quick_links {
+    grid-area: quick_links;
+    color: white;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+#links_icon {
+    height: 2rem;
+    width: 2rem;
+    padding: 1rem;
+}
+
+#quick_links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+#quick_links ul li {
+    list-style: none;
+    color: white;
+    padding: 1rem;
+}
+
+#quick_links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#quick_links ul li a svg {
+    height: 2rem;
+    width: 2rem;
+    transition: 0.3s ease-in;
+}
+
+#quick_links ul li a svg:hover {
+    transform: scale(1.5);
+} */
+
+#footer {
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-weight: 100;
+    padding: 1rem;
+    color: white;
+    border-top: 1px solid white;
+}
+
+#footer nav ul {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+#header nav ul li {
+    border-right: 1px solid white;
+    padding: 0.5rem 1rem;
+    min-width: fit-content;
+    font-weight: 100;
+    font-size: 1rem;
+    list-style: none;
+}
+
+#footer nav ul li {
+    padding: 0.5rem 1rem;
+    min-width: fit-content;
+    font-weight: 100;
+    font-size: 1rem;
+    list-style: none;
+}
+
+#header nav ul li a, footer nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+#header nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    background: #f142d7;
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    transition: 0.3s ease-in-out;
+}
+
+#header nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
