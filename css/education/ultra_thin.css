@@ -56,7 +56,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: space-around;
+    align-content: start;
     justify-content: space-evenly;
     gap: 2rem;
     padding: 1rem 0;
