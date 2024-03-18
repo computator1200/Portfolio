@@ -133,21 +133,21 @@ body {
 .programming {
     width: 95%;
     background-color: #4158D0;
-background-image: linear-gradient(223deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-image: linear-gradient(223deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 
 }
 
 .mathematics {
     width: 90%;
     background-color: #00DBDE;
-    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);       
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 }
 
 .software_and_hardware {
     width: 80%;
     background-color: #FBDA61;
     background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
-    
+
 }
 
 .teamwork {
@@ -200,7 +200,8 @@ background-image: linear-gradient(223deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)
 
 
 .title_and_text h2 {
-    font-size: 3rem;;
+    font-size: 3rem;
+    ;
     padding-bottom: 1rem;
 }
 
@@ -214,51 +215,6 @@ background-image: linear-gradient(223deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)
     border: 1px solid white;
     border-radius: 1rem;
 }
-
-/* #quick_links {
-    grid-area: quick_links;
-    color: white;
-    margin: 0.5rem;
-    padding: 1rem;
-}
-
-#links_icon {
-    height: 2rem;
-    width: 2rem;
-    padding: 1rem;
-}
-
-#quick_links ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
-    margin: 0.5rem;
-    padding: 1rem;
-    border: 1px solid white;
-    border-radius: 1rem;
-}
-
-#quick_links ul li {
-    list-style: none;
-    color: white;
-    padding: 1rem;
-}
-
-#quick_links ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-#quick_links ul li a svg {
-    height: 2rem;
-    width: 2rem;
-    transition: 0.3s ease-in;
-}
-
-#quick_links ul li a svg:hover {
-    transform: scale(1.5);
-} */
 
 #footer {
     grid-area: footer;
@@ -280,7 +236,12 @@ background-image: linear-gradient(223deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)
     justify-content: space-evenly;
 }
 
-#home_link, #about_link, #skills_link, #experience_link, #projects_link, #contact_link{
+#home_link,
+#about_link,
+#skills_link,
+#experience_link,
+#projects_link,
+#contact_link {
     border-right: 1px solid white;
     padding: 0.5rem 1rem;
     min-width: fit-content;
@@ -289,7 +250,8 @@ background-image: linear-gradient(223deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)
     list-style: none;
 }
 
-#education_link, #blog_link {
+#education_link,
+#blog_link {
     padding: 0.5rem 1rem;
     min-width: fit-content;
     font-weight: 100;
@@ -305,7 +267,8 @@ background-image: linear-gradient(223deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)
     list-style: none;
 }
 
-#header nav ul li a, footer nav ul li a {
+#header nav ul li a,
+footer nav ul li a {
     display: flex;
     align-items: center;
     gap: 0.8rem;

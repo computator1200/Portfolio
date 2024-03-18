@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     min-height: 100%;
 }
 
@@ -6,7 +7,7 @@ body {
     display: block;
     background-color: black;
     background-image: url("/images/shaan_black_background_closer_to_center.png");
-    background-size: cover;                      
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     font-family: "IBM Plex Sans", sans-serif;
@@ -15,7 +16,7 @@ body {
 .container {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    grid-template-areas: 
+    grid-template-areas:
         "header header header"
         "latest_blogs latest_blogs home"
         "latest_blogs latest_blogs ."
@@ -102,6 +103,10 @@ body {
 }
 
 #latest_blogs ol li {
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+    gap: 2rem;
     font-size: 2rem;
     list-style: none;
     color: white;
@@ -112,50 +117,27 @@ body {
     border-radius: 1rem;
 }
 
-/* #quick_links {
-    grid-area: quick_links;
-    color: white;
-    margin: 0.5rem;
-    padding: 1rem;
-}
-
-#links_icon {
-    height: 2rem;
-    width: 2rem;
-    padding: 1rem;
-}
-
-#quick_links ul {
+.date_time {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    align-items: space-between;
     justify-content: space-between;
-    gap: 1rem;
-    margin: 0.5rem;
-    padding: 1rem;
-    border: 1px solid white;
-    border-radius: 1rem;
 }
 
-#quick_links ul li {
+.date_time svg {
+    padding: 0.1rem;
+    min-width: 1rem;
+}
+
+#latest_blogs ol li p {
+    font-size: 1rem;
     list-style: none;
+    text-align: right;
     color: white;
-    padding: 1rem;
+    flex-grow: 4;
+    min-height: 6rem;
+    width: 5rem;
 }
-
-#quick_links ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-#quick_links ul li a svg {
-    height: 2rem;
-    width: 2rem;
-    transition: 0.3s ease-in;
-}
-
-#quick_links ul li a svg:hover {
-    transform: scale(1.5);
-} */
 
 #footer {
     grid-area: footer;
@@ -177,7 +159,12 @@ body {
     justify-content: space-evenly;
 }
 
-#home_link, #about_link, #skills_link, #experience_link, #projects_link, #contact_link{
+#home_link,
+#about_link,
+#skills_link,
+#experience_link,
+#projects_link,
+#contact_link {
     border-right: 1px solid white;
     padding: 0.5rem 1rem;
     min-width: fit-content;
@@ -186,7 +173,8 @@ body {
     list-style: none;
 }
 
-#education_link, #blog_link {
+#education_link,
+#blog_link {
     padding: 0.5rem 1rem;
     min-width: fit-content;
     font-weight: 100;
@@ -202,7 +190,8 @@ body {
     list-style: none;
 }
 
-#header nav ul li a, footer nav ul li a {
+#header nav ul li a,
+footer nav ul li a {
     display: flex;
     align-items: center;
     gap: 0.8rem;

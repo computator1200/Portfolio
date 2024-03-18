@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     min-height: 100%;
 }
 
@@ -10,9 +11,9 @@ body {
 
 .container {
     display: grid;
-        grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
         "header header experience"
         "header header experience"
         "my_experience my_experience my_experience"
@@ -95,51 +96,6 @@ body {
     border-radius: 1rem;
 }
 
-/* #quick_links {
-    grid-area: quick_links;
-    color: white;
-    margin: 0.5rem;
-    padding: 1rem;
-}
-
-#links_icon {
-    height: 2rem;
-    width: 2rem;
-    padding: 1rem;
-}
-
-#quick_links ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
-    margin: 0.5rem;
-    padding: 1rem;
-    border: 1px solid white;
-    border-radius: 1rem;
-}
-
-#quick_links ul li {
-    list-style: none;
-    color: white;
-    padding: 1rem;
-}
-
-#quick_links ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-#quick_links ul li a svg {
-    height: 2rem;
-    width: 2rem;
-    transition: 0.3s ease-in;
-}
-
-#quick_links ul li a svg:hover {
-    transform: scale(1.5);
-} */
-
 #footer {
     grid-area: footer;
     background-color: black;
@@ -176,7 +132,8 @@ body {
     list-style: none;
 }
 
-#header nav ul li a, footer nav ul li a {
+#header nav ul li a,
+footer nav ul li a {
     display: flex;
     align-items: center;
     gap: 0.8rem;
