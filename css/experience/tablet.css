@@ -5,38 +5,39 @@ html, body {
 body {
     display: block;
     background-color: black;
+    background-image: url("/images/shaan_black_background.png");
+    background-size: cover;                      
+    background-repeat: no-repeat;
+    background-position: center center;
     font-family: "IBM Plex Sans", sans-serif;
 }
 
 .container {
     display: grid;
-    grid-template-rows: auto 1fr auto;
+        grid-template-rows: auto 1fr auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
-        " header education_and_qualifications education_and_qualifications"
-        " header education_and_qualifications education_and_qualifications"
-        "IGCSEs IGCSEs IGCSEs"
-        "IGCSEs IGCSEs IGCSEs"
-        "IGCSEs IGCSEs IGCSEs"
-        "IGCSEs IGCSEs IGCSEs"
-        "a_levels a_levels a_levels"
-        "a_levels a_levels a_levels"
-        "a_levels a_levels a_levels"
-        "a_levels a_levels a_levels"
-        "university university university"
-        "university university university"
-        "university university university"
-        "university university university"
+        "header header header"
+        "experience experience experience"
+        "my_experience my_experience ."
+        "my_experience my_experience ."
+        "my_experience my_experience ."
+        "certificate certificate certificate"
+        "certificate certificate certificate"
+        "certificate certificate certificate"
+        "certificate certificate certificate"
+        "certificate certificate certificate"
+        "certificate certificate certificate"
         "footer footer footer";
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 #header {
     grid-area: header;
-    border-right: 1px solid white;
 }
 
 #header nav {
+    border-bottom: 1px solid white;
     padding: 0.5rem;
     display: block;
 }
@@ -47,91 +48,65 @@ body {
 
 #header nav ul {
     color: white;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-evenly;
     gap: 2rem;
     padding: 1rem 0;
 }
 
-#education_and_qualifications {
-    grid-area: education_and_qualifications;
+#experience {
+    grid-area: experience;
     color: white;
     text-align: right;
     padding-right: 2rem;
 }
 
-#education_and_qualifications h1 {
+#experience h1 {
     font-family: "IBM Plex Sans";
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
-#education_and_qualifications p {
+#experience p {
     margin: 0;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: lighter;
     text-align: right;
     text-justify: right;
 }
 
-#IGCSEs {
-    grid-area: IGCSEs;
+#my_experience {
+    grid-area: my_experience;
     color: white;
-    margin: 1rem;
     padding: 1rem;
-    max-height: fit-content;
+    height: fit-content;
     max-width: fit-content;
-    border: 1px solid white;
-    border-radius: 1rem;
-    text-align: end;
 }
 
-#IGCSEs h2, #a_levels h2 {
-    font-size: 1rem;
-    text-align: left;
-    padding: 0.5rem;
-}
-
-#IGCSEs ul, #a_levels ul, #university ul{
-    list-style: none;
-    padding: 1rem;
-
-}
-
-#a_levels {
-    grid-area: a_levels;
-    color: white;
-    margin: 1rem;
-    padding: 1rem;
-    max-height: fit-content;
-    max-width: fit-content;
-    border: 1px solid white;
-    border-radius: 1rem;
-    text-align: end;
-}
-
-#university {
-    grid-area: university;
-    color: white;
-    margin: 1rem;
-    padding: 1rem;
-    max-height: fit-content;
-    border: 1px solid white;
-    border-radius: 1rem;
-    text-align: end;
-}
-
-#university h2 {
-    font-size: 2rem;
-    text-align: left;
-    padding: 0.5rem;
-}
-
-#university ul li{
+#my_experience p {
     font-size: 1.5rem;
+    padding: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
+
+#certificate {
+    grid-area: certificate;
+    grid-area: certificate;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding: 1rem;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.certificate iframe {
+    border: none;
+    border-radius: 1rem;
+}
+
+
 
 /* #quick_links {
     grid-area: quick_links;
@@ -198,7 +173,16 @@ body {
     justify-content: space-evenly;
 }
 
-#header nav ul li {
+#home_link, #about_link, #skills_link, #experience_link, #projects_link, #contact_link{
+    border-right: 1px solid white;
+    padding: 0.5rem 1rem;
+    min-width: fit-content;
+    font-weight: 100;
+    font-size: 1rem;
+    list-style: none;
+}
+
+#education_link, #blog_link {
     padding: 0.5rem 1rem;
     min-width: fit-content;
     font-weight: 100;
