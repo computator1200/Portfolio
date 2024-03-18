@@ -4,8 +4,8 @@ body {
 }
 
 .login-page {
-    width: 25rem;
-    padding: 15rem 0 0;
+    width: fit-content;
+    padding: 15rem 1rem 0;
     margin: auto;
 }
 
@@ -13,18 +13,34 @@ body {
     position: relative;
     background: black;
     max-width: 25rem;
-    margin: 0 auto 2rem;
+    margin: -4rem auto 2rem;
     padding: 2rem;
     text-align: center;
     border: 1px solid white;
     border-radius: 1rem;
 }
 
-.form input {
+#title {
     outline: 0;
     background: transparent;
     color: white;
     width: 100%;
+    border: 0;
+    margin: 0 0 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+#content {
+    outline: 0;
+    background: transparent;
+    color: white;
+    width: 100%;
+    height: 10rem;
     border: 0;
     margin: 0 0 1rem;
     padding: 1rem;
@@ -32,6 +48,11 @@ body {
     border: 1px solid white;
     border-radius: 0.5rem;
     font-size: 1rem;
+    overflow: scroll;
+}
+
+#content::placeholder {
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
 .form button {
@@ -41,7 +62,8 @@ body {
     background: transparent;
     border: 1px solid white;
     border-radius: 0.5rem;
-    width: 100%;
+    width: fit-content;
+    margin: 1rem;
     padding: 1rem;
     color: #FFFFFF;
     font-size: 0.8rem;
