@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.login-page {
+    width: 25rem;
+    padding: 15rem 0 0;
+    margin: auto;
+  }
+  .form {
+    position: relative;
+    background: black;
+    max-width: 25rem;
+    margin: 0 auto 100px;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 1rem;
+  }
+  .form input {
+    outline: 0;
+    background: transparent;
+    color: white;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    font-size: 14px;
+  }
+  .form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .form button:hover,.form button:active,.form button:focus {
+    background-color: #FA8BFF;
+background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+color: black
+
+  }
